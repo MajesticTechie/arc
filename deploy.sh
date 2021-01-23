@@ -18,7 +18,7 @@ curl https://raw.githubusercontent.com/MajesticTechie/arc/main/bashrc >> ~/.bash
 hostname arc
 
 #rc.local with disabled power management
-curl https://raw.githubusercontent.com/MajesticTechie/arc/main/rc.local >> /etc/rc.local
+curl https://raw.githubusercontent.com/MajesticTechie/arc/main/rc.local > /etc/rc.local
 
 #Deletes Pi User
 userdel -r -f pi
