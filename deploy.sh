@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install packages
-apt install dnsutils whois ipcalc -y
+apt install dnsutils whois git ipcalc -y
 
 # ssh key
 mkdir ~/.ssh
