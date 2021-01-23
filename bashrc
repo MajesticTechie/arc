@@ -9,14 +9,12 @@ alias ns='nslookup'
 alias m='nslookup -querytype=MX'
 alias txt='dig +short txt'
 alias clamav='freshclam && clamscan -r --remove /'
-alias speedtest='speedtest-cli'
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias temp='/opt/vc/bin/vcgencmd measure_temp'
 alias trim='fstrim -v /'
 alias hosts='nmap -sn 192.168.0.0/24'
 alias p='ping'
 alias m='nslookup -querytype=MX'
-alias ip='bash /ipcheck.sh'
 
 ### Login stuff ### 
 
