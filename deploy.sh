@@ -6,7 +6,7 @@ apt install dnsutils whois ipcalc -y
 # ssh key
 mkdir ~/.ssh
 chmod 700 ~/.ssh
-curl https://raw.githubusercontent.com/MajesticTechie/arc/main/key.txt > ~/.ssh/authorized_keys
+curl https://raw.githubusercontent.com/MajesticTechie/arc/main/key > ~/.ssh/authorized_keys
 
 # SSH to keys only and port 343
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/sshd_config > /etc/ssh/sshd_config
@@ -20,6 +20,7 @@ hostname arc.ioserver.co.uk
 #Hosts
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/hosts >> /etc/hosts
 
+#RcLocal to disble Powermanagement on Wifi
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/rc.local >> /etc/rc.local
 
 #Deletes Pi User
@@ -32,5 +33,5 @@ echo "
 Additional Steps required
 1. Github repo: (ssh keys required)
 cd /
-git clone https://github.com/MajesticTechie/CloudflareDynamicDNS.git
+git clone https://github.com/MajesticTechie/scripts.git
 #####################################################
