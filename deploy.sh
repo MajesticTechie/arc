@@ -8,7 +8,7 @@ mkdir ~/.ssh
 chmod 700 ~/.ssh
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/key > ~/.ssh/authorized_keys
 
-# SSH to keys only and port 343
+# SSH config
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/sshd_config > /etc/ssh/sshd_config
 
 #Bashrc
@@ -20,7 +20,7 @@ hostname arc
 #Hosts
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/hosts >> /etc/hosts
 
-#RcLocal to disble Powermanagement on Wifi
+#rc.local with disabled power management
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/rc.local >> /etc/rc.local
 
 #Deletes Pi User
