@@ -15,7 +15,7 @@ curl https://raw.githubusercontent.com/MajesticTechie/arc/main/sshd_config > /et
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/bashrc >> ~/.bashrc
 
 #Set hostname
-hostname arc.ioserver.co.uk
+hostname arc
 
 #Hosts
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/hosts >> /etc/hosts
