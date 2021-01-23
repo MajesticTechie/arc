@@ -17,9 +17,6 @@ curl https://raw.githubusercontent.com/MajesticTechie/arc/main/bashrc >> ~/.bash
 #Set hostname
 hostname arc
 
-#Hosts
-curl https://raw.githubusercontent.com/MajesticTechie/arc/main/hosts >> /etc/hosts
-
 #rc.local with disabled power management
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/rc.local >> /etc/rc.local
 
