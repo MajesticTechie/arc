@@ -14,6 +14,10 @@ curl https://raw.githubusercontent.com/MajesticTechie/arc/main/sshd_config > /et
 #Bashrc
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/bashrc >> ~/.bashrc
 
+#MOTD Banner
+wget -q -O /etc/profile.d/motd.sh https://raw.githubusercontent.com/MajesticTechie/arc/main/motd.sh
+chmod +x /etc/profile.d/motd.sh
+
 #Set hostname
 hostname arc
 echo "arc" > /etc/hostname
