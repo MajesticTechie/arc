@@ -4,9 +4,9 @@ upSeconds="$(/usr/bin/cut -d. -f1 /proc/uptime)"
 
 #Checks if reboot is required
 if [ -f /var/run/reboot-required ];
-then reboot='### !! reboot required !! ###'
+then reboot='Yes!'
 else
-reboot='no'
+reboot='No'
 fi
 
 printf "$(tput setaf 2)
