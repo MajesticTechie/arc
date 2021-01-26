@@ -16,7 +16,7 @@ printf "$(tput setaf 2)
   : .~.'~'.~. :   Memory...............: $(($(cat /proc/meminfo | grep MemAvailable | awk {'print $2'}) / 1024))M (Available) / $(($(cat /proc/meminfo | grep MemTotal | awk {'print $2'}) / 1024))M (Total)
  ~ (   ) (   ) ~  Free Disk Space......: $(df -h | grep -E '^/dev/root' | awk '{ print $4 }') on /dev/root
 ( : '~'.~.'~' : ) Running Processes....: $(ps ax | wc -l | tr -d " ")
- ~ .~ (   ) ~. ~  Load Averages........: ${one}, ${five}, ${fifteen} (1, 5, 15 min)
+ ~ .~ (   ) ~. ~  Load Averages........: ${one}, ${five}, ${fifteen}
   (  : '~' :  )   Temperature..........: $(/opt/vc/bin/vcgencmd measure_temp | cut -c "6-9")  C
    '~ .~~~. ~'    Public IP Address....: $(dig +short myip.opendns.com @resolver1.opendns.com)
        '~'        Reboot Required......: $(echo $reboot)
