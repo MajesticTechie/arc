@@ -4,9 +4,9 @@ upSeconds="$(/usr/bin/cut -d. -f1 /proc/uptime)"
 
 #Checks if reboot is required
 if [ -f /var/run/reboot-required ];
-then reboot='Yes!'
+then reboot="$(tput setaf 3)Yes!"
 else
-reboot='No'
+reboot="No"
 fi
 
 printf "$(tput setaf 2)
@@ -19,5 +19,5 @@ printf "$(tput setaf 2)
  ~ .~ (   ) ~. ~  Load Averages........: ${one}, ${five}, ${fifteen}
   (  : '~' :  )   Temperature..........: $(/opt/vc/bin/vcgencmd measure_temp | cut -c "6-9")  C
    '~ .~~~. ~'    Public IP Address....: $(dig +short myip.opendns.com @resolver1.opendns.com)
-       '~'        Reboot Required......: $(echo $reboot)
+       '~'        Reboot Required......: $reboot
 \n$(tput sgr0)"
