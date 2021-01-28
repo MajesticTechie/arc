@@ -42,7 +42,7 @@ userdel -r -f pi
 
 #Scripts
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/rebootchecker.sh > /rebootchecker.sh
-curl https://raw.githubusercontent.com/MajesticTechie/CloudflareDynamicDNS/main/CloudflareDNS.sh /CloudflareDNS.sh
+curl https://raw.githubusercontent.com/MajesticTechie/CloudflareDynamicDNS/main/CloudflareDNS.sh > /CloudflareDNS.sh
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/ipcheck.sh > /ipcheck.sh
 
 ## Confirm Install is now finished
