@@ -19,8 +19,10 @@ wget -q -O /etc/profile.d/motd.sh https://raw.githubusercontent.com/MajesticTech
 chmod +x /etc/profile.d/motd.sh
 
 #Set hostname
-hostname arc
-echo "arc" > /etc/hostname
+echo "Enter your Hostname:"
+read host_name
+hostname $host_name
+echo $host_name > /etc/hostname
 
 #Install Speed test CLI
 sudo apt-get install gnupg1 apt-transport-https dirmngr
