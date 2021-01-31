@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Update
-apt-get update && apt-get upgrade -y
+apt update && apt upgrade -y
 
 # Install packages
 apt install dnsutils whois git ipcalc -y
