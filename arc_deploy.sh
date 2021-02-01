@@ -50,6 +50,6 @@ echo "
 !!!!!!!!!!!! Automated install finished !!!!!!!!!!!!!
 Additional Steps required
 1. Github repo: (ssh keys required)
-cd /
-git clone https://github.com/MajesticTechie/scripts.git
+cd 
+git clone git@github.com:MajesticTechie/scripts.git
 #####################################################
