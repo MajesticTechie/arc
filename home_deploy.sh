@@ -18,7 +18,8 @@ curl https://raw.githubusercontent.com/MajesticTechie/arc/main/sshd_config > /et
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/bashrc >> ~/.bashrc
 
 #MOTD Banner
-curl https://raw.githubusercontent.com/MajesticTechie/arc/main/home_motd > /etc/motd
+curl https://raw.githubusercontent.com/MajesticTechie/arc/main/motd.sh > /etc/profile.d/motd.sh
+chmod +x /etc/profile.d/motd.sh
 
 #Set hostname
 echo "Enter your Hostname:"
