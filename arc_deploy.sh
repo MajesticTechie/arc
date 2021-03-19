@@ -4,7 +4,7 @@
 apt update && apt upgrade -y
 
 # Install packages
-apt install dnsutils whois git ipcalc ftp telnet lftp -y
+apt install dnsutils whois git ipcalc ftp telnet lftp mtr -y
 
 # ssh key
 mkdir ~/.ssh
