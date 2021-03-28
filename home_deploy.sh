@@ -12,7 +12,7 @@ chmod 700 ~/.ssh
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/key > ~/.ssh/authorized_keys
 
 # SSH config
-curl https://raw.githubusercontent.com/MajesticTechie/arc/main/sshd_config > /etc/ssh/sshd_config
+curl https://raw.githubusercontent.com/MajesticTechie/arc/main/home_sshd_config > /etc/ssh/sshd_config
 
 #Bashrc
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/bashrc >> ~/.bashrc
