@@ -21,6 +21,9 @@ curl https://raw.githubusercontent.com/MajesticTechie/arc/main/bashrc >> ~/.bash
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/motd.sh > /etc/profile.d/motd.sh
 chmod +x /etc/profile.d/motd.sh
 
+#clear default not
+cat /dev/null > /etc/motd
+
 #Set hostname
 echo "Enter your Hostname:"
 read host_name
