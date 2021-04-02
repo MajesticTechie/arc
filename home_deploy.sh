@@ -17,6 +17,9 @@ curl https://raw.githubusercontent.com/MajesticTechie/arc/main/home_sshd_config 
 #Bashrc
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/bashrc >> ~/.bashrc
 
+#clear default not
+cat /dev/null > /etc/motd
+
 #MOTD Banner
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/motd.sh > /etc/profile.d/motd.sh
 chmod +x /etc/profile.d/motd.sh
