@@ -24,6 +24,9 @@ read host_name
 hostname $host_name
 echo $host_name > /etc/hostname
 
+#Set External DNS servers
+echo "static domain_name_servers=1.1.1.1 1.0.0.1" >> /etc/dhcpcd.conf
+
 #Update
 apt update && apt upgrade -y
 
