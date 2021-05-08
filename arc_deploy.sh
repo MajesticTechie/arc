@@ -1,11 +1,5 @@
 #!/bin/bash
 
-#Update
-apt update && apt upgrade -y
-
-# Install packages
-apt install dnsutils whois git ipcalc ftp telnet lftp mtr nmap -y
-
 # ssh key
 mkdir ~/.ssh
 chmod 700 ~/.ssh
@@ -29,6 +23,12 @@ echo "Enter your Hostname:"
 read host_name
 hostname $host_name
 echo $host_name > /etc/hostname
+
+#Update
+apt update && apt upgrade -y
+
+# Install packages
+apt install dnsutils whois git ipcalc ftp telnet lftp mtr nmap -y
 
 #Install Speed test CLI
 sudo apt-get install gnupg1 apt-transport-https dirmngr
