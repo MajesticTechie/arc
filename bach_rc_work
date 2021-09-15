@@ -1,0 +1,11 @@
+# My Aliases
+alias update='yum upgrade -y'
+alias c='clear'
+alias mx='dig +short mx'
+alias w='whois -H'
+alias a='dig +short'
+alias ns='nslookup'
+alias m='nslookup -querytype=MX'
+alias txt='dig +short txt'
+alias p='ping'
+alias m='nslookup -querytype=MX'
