@@ -49,6 +49,11 @@ curl https://raw.githubusercontent.com/MajesticTechie/arc/main/rebootchecker.sh 
 curl https://raw.githubusercontent.com/MajesticTechie/CloudflareDynamicDNS/main/CloudflareDNS.sh > /CloudflareDNS.sh
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/ipcheck.sh > /ipcheck.sh
 
+#Crons
+echo "*/30 * * * * /CloudflareDNS.sh" >> /var/spool/cron/crontabs/root
+echo "0 2 * * * /rebootchecker.sh" >> /var/spool/cron/crontabs/root
+
+
 ## Confirm Install is now finished
 echo "
 #####################################################
