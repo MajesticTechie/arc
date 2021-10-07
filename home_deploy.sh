@@ -53,6 +53,8 @@ curl https://raw.githubusercontent.com/MajesticTechie/arc/main/ipcheck.sh > /ipc
 echo "*/30 * * * * /CloudflareDNS.sh" >> /var/spool/cron/crontabs/root
 echo "0 2 * * * /rebootchecker.sh" >> /var/spool/cron/crontabs/root
 
+#install piHole
+curl -sSL https://install.pi-hole.net | bash
 
 ## Confirm Install is now finished
 echo "
