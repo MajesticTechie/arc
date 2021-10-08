@@ -1,6 +1,6 @@
 #!/bin/bash 
 #Check if file exists 
-if [ -f /var/run/reboot-required ]; then 
+if [ -f /var/run/reboot-required ];  
 # If file is present schedule a reboot for early morning 
-shutdown -r 06:45 
+then shutdown -r 06:45 
 fi
