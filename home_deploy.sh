@@ -21,7 +21,7 @@ curl https://raw.githubusercontent.com/MajesticTechie/arc/main/bashrc >> ~/.bash
 cat /dev/null > /etc/motd
 
 #MOTD Banner
-curl https://raw.githubusercontent.com/MajesticTechie/arc/main/motd.sh > /etc/profile.d/motd.sh
+curl https://raw.githubusercontent.com/MajesticTechie/arc/main/home-motd.sh > /etc/profile.d/motd.sh
 chmod +x /etc/profile.d/motd.sh
 
 #Set hostname
