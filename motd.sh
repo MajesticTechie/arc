@@ -18,6 +18,6 @@ printf "$(tput setaf 2)
 ( : '~'.~.'~' : ) Free Disk Space......: $(df -h | grep -E '^/dev/root' | awk '{ print $4 }') on /dev/root
  ~ .~ (   ) ~. ~  Running Processes....: $(ps ax | wc -l | tr -d " ")
   (  : '~' :  )   Load Averages........: ${one}, ${five}, ${fifteen}
-   '~ .~~~. ~'    Temperature..........: $(/opt/vc/bin/vcgencmd measure_temp | cut -c "6-9")  C
+   '~ .~~~. ~'    Temperature..........: $(/usr/bin/vcgencmd measure_temp | cut -c "6-9")  C
        '~'        Reboot Required......: $reboot
 \n$(tput sgr0)"
