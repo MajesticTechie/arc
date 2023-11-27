@@ -46,11 +46,14 @@ userdel -r -f pi
 
 #Scripts
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/rebootchecker.sh > /rebootchecker.sh
-curl https://raw.githubusercontent.com/MajesticTechie/CloudflareDynamicDNS/main/CloudflareDNS.sh > /CloudflareDNS.sh
+curl https://raw.githubusercontent.com/MajesticTechie/CloudflareDynamicDNS/main/CloudflareDNS.sh > /cloudflare-dns.sh
 curl https://raw.githubusercontent.com/MajesticTechie/arc/main/ipcheck.sh > /ipcheck.sh
+chmod +x /rebootchecker.sh
+chmod +x /cloudflare-dns.sh
+chmod +x /ipcheck.sh
 
 #Crons
-echo "*/30 * * * * /CloudflareDNS.sh" >> /var/spool/cron/crontabs/root
+echo "*/30 * * * * /cloudflare-dns.sh" >> /var/spool/cron/crontabs/root
 echo "0 2 * * * /rebootchecker.sh" >> /var/spool/cron/crontabs/root
 
 #install piHole
